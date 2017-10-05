@@ -4,13 +4,38 @@
 	<stdlib.h>
 	"ShellController.h"
 
-1507211885 /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.h
+1507220085 /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 
-1507211622 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
+1507220845 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
 	<stdio.h>
 	<stdlib.h>
 	"ShellController.h"
+
+1507221281 source:/home/ahmed/Linux-Command-Interpreter/Shell/command_parser.c
+	<stdio.h>
+	<stdlib.h>
+	"command_parser.h"
+
+1507220779 /home/ahmed/Linux-Command-Interpreter/Shell/command_parser.h
+
+1507216744 source:/home/ahmed/Linux-Command-Interpreter/Shell/command_utils.c
+	"command_utils.h"
+	"stdbool.h"
+
+1507213988 /home/ahmed/Linux-Command-Interpreter/Shell/command_utils.h
+
+1507216759 source:/home/ahmed/Linux-Command-Interpreter/Shell/commands.c
+	<stdio.h>
+	<stdlib.h>
+	"variables.h"
+
+1507216034 /home/ahmed/Linux-Command-Interpreter/Shell/variables.h
+
+1507216269 source:/home/ahmed/Linux-Command-Interpreter/Shell/variables.c
+	<stdio.h>
+	<stdlib.h>
+	"variables.h"
 

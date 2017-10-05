@@ -4,6 +4,10 @@
 
 const int MAX_LEN = 512;
 
+/**
+* This function pointer points to the mode-function of the command
+* interpreter.
+*/
 void (*runner)();
 
 void startShell(int argc, char* args[])
@@ -13,25 +17,31 @@ void startShell(int argc, char* args[])
         puts("No such file or directory specified!\n");
         return;
     }
-    unparsedCommand = (char*)malloc((size_t)MAX_LEN);
+    unparsedCommand = (char*)malloc((size_t)MAX_LEN * sizeof(char));
     (*runner)();
 
 }
 
 void runInteractiveMode()
 {
-    puts("Interactive mode is triggered.\n");
+    puts("Interactive mode is activated.\n");
     while (true)
     {
+        fflush(stdout);
         printf("Shell> ");
-        fgets(unparsedCommand, MAX_LEN, stdin);
+        gets(unparsedCommand);
+        printf("size: %d bytes\n", strlen(unparsedCommand));
+        //puts(unparsedCommand);
+        if (strlen(unparsedCommand) > MAX_LEN)
+            error("Very long command, it exceeds 512 bytes!");
+        parsedCommand = parse(unparsedCommand);
 
     }
 }
 
 void runBatchMode()
 {
-    puts("Batch mode is triggered.\n");
+    puts("Batch mode is activated.\n");
 }
 
 bool handle(int argc)
@@ -46,4 +56,11 @@ bool handle(int argc)
     else
         return false;
     return true;
+}
+
+void error(char* msg)
+{
+    puts(msg);
+    // Here goes dealing with logger file.
+
 }
