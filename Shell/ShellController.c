@@ -31,11 +31,10 @@ void runInteractiveMode()
         printf("Shell> ");
         gets(unparsedCommand);
         printf("size: %d bytes\n", strlen(unparsedCommand));
-        //puts(unparsedCommand);
         if (strlen(unparsedCommand) > MAX_LEN)
             error("Very long command, it exceeds 512 bytes!");
-        parsedCommand = parse(unparsedCommand);
-
+        parsedCommand = normalize(unparsedCommand);
+        struct command_properties* comProperties = parse(parsedCommand);
     }
 }
 

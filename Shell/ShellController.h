@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "tokenizer.h"
 #ifndef SHELLCONTROLLER_H_INCLUDED
 #define SHELLCONTROLLER_H_INCLUDED
 
