@@ -4,9 +4,11 @@
 
 struct command_properties
 {
-    char* type;
     //char** arguments;
+    char* type;
     bool foreground;
+    char beforeEqual[200];
+    char afterEqual[200];
 };
 
 

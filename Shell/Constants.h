@@ -3,6 +3,7 @@
 
 const char* COMMENT = "comment";
 const char* COMMAND = "command";
+const char* ASSIGNMENT = "assignment";
 
 
 #endif // CONSTANTS_H_INCLUDED
