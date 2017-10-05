@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "ShellController.h"
 
-int main()
+int main(int argc, char* args[])
 {
-    startShell();
+    startShell(1, args);
     return 0;
 }
