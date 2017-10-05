@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1507207138 source:/home/ahmed/Linux-Command-Interpreter/Shell/main.c
+	<stdio.h>
+	<stdlib.h>
+	"ShellController.h"
+
+1507207162 /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.h
+
+1507207175 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
+	<stdio.h>
+	<stdlib.h>
+	"ShellController.h"
+
