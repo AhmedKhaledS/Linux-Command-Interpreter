@@ -15,12 +15,13 @@
 	<stdlib.h>
 	"ShellController.h"
 
-1507229154 source:/home/ahmed/Linux-Command-Interpreter/Shell/command_parser.c
+1507230692 source:/home/ahmed/Linux-Command-Interpreter/Shell/command_parser.c
 	<stdio.h>
 	<stdlib.h>
 	"command_parser.h"
+	"tokenizer.h"
 
-1507228216 /home/ahmed/Linux-Command-Interpreter/Shell/command_parser.h
+1507230745 /home/ahmed/Linux-Command-Interpreter/Shell/command_parser.h
 	"Constants.h"
 	"command_utils.h"
 
@@ -36,7 +37,7 @@
 	<stdlib.h>
 	"variables.h"
 
-1507216034 /home/ahmed/Linux-Command-Interpreter/Shell/variables.h
+1507231404 /home/ahmed/Linux-Command-Interpreter/Shell/variables.h
 
 1507216269 source:/home/ahmed/Linux-Command-Interpreter/Shell/variables.c
 	<stdio.h>
@@ -45,7 +46,7 @@
 
 1507230255 /home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.h
 
-1507222450 source:/home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.c
+1507230311 source:/home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.c
 	<stdio.h>
 	<stdlib.h>
 	"tokenizer.h"

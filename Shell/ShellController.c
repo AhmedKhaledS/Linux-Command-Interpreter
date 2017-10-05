@@ -63,3 +63,9 @@ void error(char* msg)
     // Here goes dealing with logger file.
 
 }
+
+void print(char* msg)
+{
+    puts(msg);
+    // Don't forget the logger.
+}

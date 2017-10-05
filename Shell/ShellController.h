@@ -37,4 +37,11 @@ void error(char* msg);
 */
 bool handle(int argc);
 
+/**
+* This function is resposible for printing status in both terminal
+* and logger file.
+*/
+void print(char* msg);
+
+
 #endif // SHELLCONTROLLER_H_INCLUDED
