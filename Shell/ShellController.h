@@ -8,6 +8,10 @@
 
 char* unparsedCommand;
 char** parsedCommand;
+char* commandName;
+char** argList;
+char* currentDirectory;
+struct command_properties* commandProperties;
 /**
 * This function starts running the shell program until the end
 * of commands or until a fatal error occurs.
@@ -26,6 +30,11 @@ void runInteractiveMode();
 */
 void runBatchMode();
 
+/**
+* This function is responsible for splitting the parsed command into
+* the name of the command and the argument list.
+*/
+void partition_command();
 /**
 * Reports an error and prints it in standard std and logger file.
 */

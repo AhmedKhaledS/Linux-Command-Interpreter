@@ -4,6 +4,5 @@
 int sizeOfWords;
 char** normalizedCommand;
 char** normalize(char* line);
-int getNumberOfWords();
 
 #endif // TOKENIZER_H_INCLUDED

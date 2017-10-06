@@ -7,6 +7,7 @@ const int MAX_SIZE = 256;
 char** normalize(char* line)
 {
     sizeOfWords = 0;
+    //free(normalizedCommand);
     normalizedCommand = (char**)malloc(sizeof(char*)*MAX_SIZE);
     char* tok = strtok(line, " ");
     while (tok != NULL)

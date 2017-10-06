@@ -4,13 +4,13 @@
 	<stdlib.h>
 	"ShellController.h"
 
-1507231503 /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.h
+1507252040 /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 	"tokenizer.h"
 
-1507231516 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
+1507281063 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
 	<stdio.h>
 	<stdlib.h>
 	"ShellController.h"
@@ -32,9 +32,12 @@
 1507234653 /home/ahmed/Linux-Command-Interpreter/Shell/command_utils.h
 	<stdbool.h>
 
-1507216759 source:/home/ahmed/Linux-Command-Interpreter/Shell/commands.c
+1507281029 source:/home/ahmed/Linux-Command-Interpreter/Shell/commands.c
 	<stdio.h>
 	<stdlib.h>
+	<unistd.h>
+	<sys/types.h>
+	"commands.h"
 	"variables.h"
 
 1507231404 /home/ahmed/Linux-Command-Interpreter/Shell/variables.h
@@ -45,12 +48,17 @@
 	<string.h>
 	"variables.h"
 
-1507230255 /home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.h
+1507251178 /home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.h
 
-1507230311 source:/home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.c
+1507251384 source:/home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.c
 	<stdio.h>
 	<stdlib.h>
 	"tokenizer.h"
 
-1507232332 /home/ahmed/Linux-Command-Interpreter/Shell/Constants.h
+1507247226 /home/ahmed/Linux-Command-Interpreter/Shell/Constants.h
+
+1507277526 /home/ahmed/Linux-Command-Interpreter/Shell/commands.h
+	<stdio.h>
+	<stdlib.h>
+	"ShellController.h"
 

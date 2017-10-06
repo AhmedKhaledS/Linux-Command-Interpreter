@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "ShellController.h"
 
+
 const int MAX_LEN = 512;
 
 /**
@@ -30,11 +31,18 @@ void runInteractiveMode()
         fflush(stdout);
         printf("Shell> ");
         gets(unparsedCommand);
-        printf("size: %d bytes\n", strlen(unparsedCommand));
+//        printf("size: %d bytes\n", strlen(unparsedCommand));
         if (strlen(unparsedCommand) > MAX_LEN)
             error("Very long command, it exceeds 512 bytes!");
         parsedCommand = normalize(unparsedCommand);
-        struct command_properties* comProperties = parse(parsedCommand);
+        commandProperties = parse(parsedCommand);
+        partition_command();
+//        if (!strcmp(commandName, "echo"))
+//            echo(argList[1]);
+//        else if (!strcmp(commandName, "cd"))
+//            cd(argList);
+//        else
+            general_shell_command(argList);
     }
 }
 
@@ -43,6 +51,33 @@ void runBatchMode()
     puts("Batch mode is activated.\n");
 }
 
+void partition_command()
+{
+    commandName = (char*)malloc(sizeof(char)*(MAX_LEN/2));
+    strcpy(commandName, "./bin/bash");
+    argList = (char**)malloc(sizeof(char*)*(4));
+    argList[0] ="/bin/bash";
+    argList[1] = "-c";
+    int len = 0;
+    char tmp[MAX_LEN];
+    for (int i = 0; i < sizeOfWords; i++)
+    {
+        len += strlen(parsedCommand[i]);
+        if (i == 0)
+            strcpy(tmp, parsedCommand[i]);
+        else
+            strcat(tmp, parsedCommand[i]);
+        if (i != sizeOfWords-1)
+            strcat(tmp, " "), len++;
+    }
+    tmp[len] = '\0';
+//    print(tmp);
+    argList[2] = tmp;
+//    print(argList[0]);
+//    print(argList[1]);
+//    print(argList[2]);
+    argList[3] = NULL;
+}
 bool handle(int argc)
 {
     if (argc == 2)
