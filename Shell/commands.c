@@ -78,6 +78,7 @@ void print_history()
     for (int i = 0; i < command_counter; i++)
     {
         print(history[i]);
+        print("\n");
     }
 }
 void add_command(char* comm)

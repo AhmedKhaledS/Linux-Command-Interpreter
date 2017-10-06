@@ -38,7 +38,6 @@ void runInteractiveMode()
         char command_copy[MAX_LEN][MAX_LEN];
         strcpy(command_copy[command_counter], unparsedCommand);
         command_copy[command_counter][strlen(unparsedCommand)] = '\0';
-//        printf("size: %d bytes\n", strlen(unparsedCommand));
         if (strlen(unparsedCommand) > MAX_LEN)
             error("Very long command, it exceeds 512 bytes!");
         parsedCommand = normalize(unparsedCommand);
@@ -57,7 +56,6 @@ void runInteractiveMode()
     //        else
             general_shell_command(argList);
         }
-        //print(command_copy[command_counter]);
         add_command(command_copy[command_counter]);
     }
 }
@@ -166,7 +164,7 @@ void load_history()
     if (access("history.txt", F_OK) != -1)
     {
         file = fopen("history.txt", "r");
-        char buffer[MAX_LEN][MAX_LEN];
+        char buffer[MAX_COMMANDS][MAX_LEN];
         while (fgets(buffer[command_counter], MAX_LEN, file) != NULL)
         {
             //[command_counter][strlen(buffer[command_counter])] = '\0';
