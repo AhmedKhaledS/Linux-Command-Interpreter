@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
+#include <unistd.h>
+#include "commands.h"
 #include "tokenizer.h"
+#include "command_utils.h"
 #ifndef SHELLCONTROLLER_H_INCLUDED
 #define SHELLCONTROLLER_H_INCLUDED
 
@@ -52,6 +56,11 @@ void load_history();
 * Reports an error and prints it in standard std and logger file.
 */
 void error(char* msg);
+
+/**
+* This function is responsible for handling empty command.
+*/
+bool handle_empty();
 
 /**
 * This function is responsible for handling exit command.

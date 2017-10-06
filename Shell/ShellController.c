@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "ShellController.h"
-#include <unistd.h>
-
 
 const int MAX_LEN = 512;
 const int MAX_COMMANDS = 1000;
@@ -32,8 +28,8 @@ void runInteractiveMode()
     puts("Interactive mode is activated.\n");
     while (true)
     {
-        printf("Shell> ");
         fflush(stdout);
+        printf("Shell> ");
         gets(unparsedCommand);
         char command_copy[MAX_LEN][MAX_LEN];
         strcpy(command_copy[command_counter], unparsedCommand);
@@ -64,20 +60,52 @@ void runBatchMode()
 {
     puts("Batch mode is activated.\n");
     FILE* file;
-    file = fopen(file_directory, "r");
+    char buffer[MAX_LEN];
+    char* command_copy;
+    char* sec_copy;
+    file = fopen("test.txt", "r");
     if (file == NULL)
     {
         error("No such file is found!");
         return;
     }
-    char buffer[MAX_LEN];
-    while (fgets(buffer, MAX_LEN, file) != NULL)
+    while (fgets(buffer, MAX_COMMANDS, file) != NULL)
     {
         print(buffer);
+        unparsedCommand = buffer;
+        unparsedCommand[strlen(unparsedCommand)-1] = '\0';
+        //command_copy = copy_command(unparsedCommand);
+        strcpy(command_copy, unparsedCommand);
+        //strcpy(sec_copy, command_copy);
+        if (strlen(unparsedCommand) > MAX_LEN)
+            error("Very long command, it exceeds 512 bytes!");
+        //strcpy(sec_copy, unparsedCommand);
+        if (handle_empty())
+            continue;
+        parsedCommand = normalize(copy_command(command_copy));
+        commandProperties = parse(parsedCommand);
+        if (commandProperties->type == "comment")
+            continue;
+        if (handle_exit())
+            return;
+        else if (!strcmp(parsedCommand[0], "history") && sizeOfWords == 1)
+            print_history();
+        else
+        {
+            partition_command();
+    //        if (!strcmp(commandName, "echo"))
+    //            echo(argList[1]);
+    //        else if (!strcmp(commandName, "cd"))
+    //            cd(argList);
+    //        else
+            general_shell_command(argList);
+        }
+        add_command(copy_command(command_copy));
     }
     fclose(file);
     return;
 }
+
 
 void partition_command()
 {
@@ -90,6 +118,7 @@ void partition_command()
     char tmp[MAX_LEN];
     for (int i = 0; i < sizeOfWords; i++)
     {
+        puts(parsedCommand[i]);
         len += strlen(parsedCommand[i]);
         if (i == 0)
             strcpy(tmp, parsedCommand[i]);
@@ -99,7 +128,7 @@ void partition_command()
             strcat(tmp, " "), len++;
     }
     tmp[len] = '\0';
-//    print(tmp);
+    print(tmp);
     argList[2] = tmp;
 //    print(argList[0]);
 //    print(argList[1]);
@@ -118,15 +147,20 @@ bool handle_exit()
     return false;
 }
 
+bool handle_empty()
+{
+    return !strcmp("", unparsedCommand);
+}
+
 bool handle(int argc, char** args)
 {
-    if (argc == 2)
+    if (argc == 1)
     {
         // Requires more handling.
         file_directory = args[1];
         runner = &runBatchMode;
     }
-    else if (argc == 1)
+    else if (argc == 2)
         runner = &runInteractiveMode;
     else
         return false;

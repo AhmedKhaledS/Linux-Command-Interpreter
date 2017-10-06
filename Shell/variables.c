@@ -3,7 +3,7 @@
 #include <string.h>
 #include "variables.h"
 
-void set_variable(const char* key, const char* value)
+void set_variable(const char* key, char* value)
 {
     for (int i = 0; i < lastIndex; i++)
     {
@@ -34,6 +34,6 @@ void print_all_variables()
 {
     for (int i = 0; i < lastIndex; i++)
     {
-        print(table[i]);
+        printf("%s", table[i]);
     }
 }

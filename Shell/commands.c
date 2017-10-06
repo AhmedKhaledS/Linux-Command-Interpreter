@@ -1,13 +1,13 @@
 #include <stdio.h>
+#include "commands.h"
 #include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
-#include "commands.h"
+#include <string.h>
 #include "variables.h"
 
-
 const int MAX_VAR_LEN = 200;
-const int MAX_MSG_LEN = 200;
+const int MAX_MSG_LEN = 512;
 void general_shell_command(char** argumentList)
 {
     pid_t pid;

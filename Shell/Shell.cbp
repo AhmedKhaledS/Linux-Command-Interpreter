@@ -31,9 +31,34 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Constants.h" />
+		<Unit filename="ShellController.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ShellController.h" />
+		<Unit filename="command_parser.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="command_parser.h" />
+		<Unit filename="command_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="command_utils.h" />
+		<Unit filename="commands.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="commands.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="tokenizer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="tokenizer.h" />
+		<Unit filename="variables.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="variables.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />

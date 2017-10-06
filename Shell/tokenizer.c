@@ -2,20 +2,22 @@
 #include <stdlib.h>
 #include "tokenizer.h"
 
-const int MAX_SIZE = 256;
+const int MAX_SIZE = 513;
 
 char** normalize(char* line)
 {
+    //char lineBuff[MAX_SIZE];
+    //strcpy(lineBuff, line);
+    //puts(line);
     sizeOfWords = 0;
-    //free(normalizedCommand);
     normalizedCommand = (char**)malloc(sizeof(char*)*MAX_SIZE);
-    char* tok = strtok(line, " ");
-    while (tok != NULL)
+    char* token = strtok(line, " ");
+    while (token != NULL)
     {
-        normalizedCommand[sizeOfWords] = (char*)malloc(sizeof(char)*strlen(tok));
-        normalizedCommand[sizeOfWords] = tok;
+        normalizedCommand[sizeOfWords] = (char*)malloc(sizeof(char)*strlen(token));
+        normalizedCommand[sizeOfWords] = token;
         sizeOfWords++;
-        tok = strtok(NULL, " ");
+        token = strtok(NULL, " ");
     }
     normalizedCommand = (char**)realloc(normalizedCommand, sizeof(char*) * sizeOfWords);
     return normalizedCommand;

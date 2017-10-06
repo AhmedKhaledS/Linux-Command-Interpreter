@@ -1,9 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "ShellController.h"
-#include "command_utils.h"
 #ifndef COMMANDS_H_INCLUDED
 #define COMMANDS_H_INCLUDED
+#include "ShellController.h"
+
+
 
 void general_shell_command(char** argumentList);
 void cd(const char* path);
