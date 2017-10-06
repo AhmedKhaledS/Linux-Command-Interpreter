@@ -10,8 +10,10 @@ char* unparsedCommand;
 char** parsedCommand;
 char* commandName;
 char** argList;
-char* currentDirectory;
+char* file_directory;
+char** history;
 struct command_properties* commandProperties;
+int command_counter;
 /**
 * This function starts running the shell program until the end
 * of commands or until a fatal error occurs.
@@ -35,6 +37,17 @@ void runBatchMode();
 * the name of the command and the argument list.
 */
 void partition_command();
+
+/**
+* This function saves history commands entered by the user in a file.
+*/
+void save_history();
+
+/**
+* This function loads the history commands entered by the user from a file.
+*/
+void load_history();
+
 /**
 * Reports an error and prints it in standard std and logger file.
 */
@@ -50,7 +63,7 @@ bool handle_exit();
 * ot Interactive mode. It also sends an error signal if there is
 * an error occured while starting the shell.
 */
-bool handle(int argc);
+bool handle(int argc, char** args);
 
 /**
 * This function is resposible for printing status in both terminal

@@ -26,7 +26,7 @@ void general_shell_command(char** argumentList)
     {
         if (commandProperties->foreground)
         {
-            print("waiting for child");
+            print("waiting for child\n");
             while (wait(&status) != pid);
         }
     }
@@ -72,3 +72,16 @@ void assignment(const char* var, const char* value)
 {
 
 }
+
+void print_history()
+{
+    for (int i = 0; i < command_counter; i++)
+    {
+        print(history[i]);
+    }
+}
+void add_command(char* comm)
+{
+    history[command_counter++] = comm;
+}
+

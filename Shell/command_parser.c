@@ -18,7 +18,7 @@ void handle_comment(char** command)
     if (command[0][0] == '#')
     {
         properties->type = COMMENT;
-        print("comment");
+        print("comment\n");
     }
 }
 
@@ -66,6 +66,6 @@ void handle_command(char** command)
     if (properties->type != COMMENT && properties->type != ASSIGNMENT)
     {
         properties->type = COMMAND;
-        print("command");
+        print("command\n");
     }
 }

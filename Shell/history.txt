@@ -1,0 +1,30 @@
+ É™ÿ
+pwd
+
+
+
+clear
+
+
+
+who
+
+
+
+clear
+
+
+
+rm history.txt
+
+pwd
+
+who
+
+ls
+
+dir
+
+clear
+
+history
