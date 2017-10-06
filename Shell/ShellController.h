@@ -39,6 +39,12 @@ void partition_command();
 * Reports an error and prints it in standard std and logger file.
 */
 void error(char* msg);
+
+/**
+* This function is responsible for handling exit command.
+*/
+bool handle_exit();
+
 /**
 * Handles the initialization of the shell to whether run in Batch
 * ot Interactive mode. It also sends an error signal if there is

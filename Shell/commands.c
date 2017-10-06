@@ -20,14 +20,15 @@ void general_shell_command(char** argumentList)
 //        getcwd(cwd, sizeof(cwd));
 //        print(cwd);
         execvp(*argumentList, argumentList);
-        exit(1);
-    } else
+        perror("An error has occured while executing child process!");
+    }
+    else
     {
-        //if (commandProperties->foreground)
-       // {
+        if (commandProperties->foreground)
+        {
+            print("waiting for child");
             while (wait(&status) != pid);
-          //  return WEXITSTATUS(status);
-       // }
+        }
     }
     return;
 }

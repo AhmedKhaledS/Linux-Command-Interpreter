@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "ShellController.h"
+#include "command_utils.h"
 #ifndef COMMANDS_H_INCLUDED
 #define COMMANDS_H_INCLUDED
 

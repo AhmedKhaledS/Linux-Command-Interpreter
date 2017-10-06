@@ -28,27 +28,30 @@ void runInteractiveMode()
     puts("Interactive mode is activated.\n");
     while (true)
     {
-        fflush(stdout);
         printf("Shell> ");
+        fflush(stdout);
         gets(unparsedCommand);
 //        printf("size: %d bytes\n", strlen(unparsedCommand));
         if (strlen(unparsedCommand) > MAX_LEN)
             error("Very long command, it exceeds 512 bytes!");
         parsedCommand = normalize(unparsedCommand);
         commandProperties = parse(parsedCommand);
+        if (handle_exit())
+            return;
         partition_command();
 //        if (!strcmp(commandName, "echo"))
 //            echo(argList[1]);
 //        else if (!strcmp(commandName, "cd"))
 //            cd(argList);
 //        else
-            general_shell_command(argList);
+        general_shell_command(argList);
     }
 }
 
 void runBatchMode()
 {
     puts("Batch mode is activated.\n");
+
 }
 
 void partition_command()
@@ -78,6 +81,17 @@ void partition_command()
 //    print(argList[2]);
     argList[3] = NULL;
 }
+
+bool handle_exit()
+{
+    if (!strcmp(parsedCommand[0], "exit") && sizeOfWords == 1)
+    {
+        print("shell is terminated!");
+        return true;
+    }
+    return false;
+}
+
 bool handle(int argc)
 {
     if (argc == 2)
