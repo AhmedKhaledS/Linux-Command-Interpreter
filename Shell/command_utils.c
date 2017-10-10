@@ -10,3 +10,9 @@ char* copy_command(char* comm)
     copyy[strlen(comm)] = '\0';
     return copyy;
 }
+
+void print(char* msg)
+{
+    printf("%s", msg);
+    // Don't forget the logger.
+}

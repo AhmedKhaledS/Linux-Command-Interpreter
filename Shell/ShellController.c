@@ -1,7 +1,7 @@
 #include "ShellController.h"
 
-const int MAX_LEN = 512;
-const int MAX_COMMANDS = 1000;
+const int MAX_LENGTH = 512;
+const int MAX_COMMANDS_LEN = 1000;
 
 /**
 * This function pointer points to the mode-function of the command
@@ -11,8 +11,8 @@ void (*runner)();
 
 void startShell(int argc, char* args[])
 {
-    unparsedCommand = (char*)malloc((size_t)MAX_LEN * sizeof(char));
-    history = (char**)malloc((size_t)MAX_COMMANDS * sizeof(char*));
+    unparsedCommand = (char*)malloc((size_t)MAX_LENGTH * sizeof(char));
+    history = (char**)malloc((size_t)MAX_COMMANDS_LEN * sizeof(char*));
     load_history();
     if (!handle(argc, args))
     {
@@ -31,10 +31,10 @@ void runInteractiveMode()
         fflush(stdout);
         printf("Shell> ");
         gets(unparsedCommand);
-        char command_copy[MAX_LEN][MAX_LEN];
+        char command_copy[MAX_LENGTH][MAX_LENGTH];
         strcpy(command_copy[command_counter], unparsedCommand);
         command_copy[command_counter][strlen(unparsedCommand)] = '\0';
-        if (strlen(unparsedCommand) > MAX_LEN)
+        if (strlen(unparsedCommand) > MAX_LENGTH)
             error("Very long command, it exceeds 512 bytes!");
         parsedCommand = normalize(unparsedCommand);
         commandProperties = parse(parsedCommand);
@@ -60,24 +60,24 @@ void runBatchMode()
 {
     puts("Batch mode is activated.\n");
     FILE* file;
-    char buffer[MAX_LEN];
+    char buffer[MAX_LENGTH];
     char* command_copy;
-    char* sec_copy;
-    file = fopen("test.txt", "r");
+    file = fopen(file_directory, "r");
     if (file == NULL)
     {
         error("No such file is found!");
         return;
     }
-    while (fgets(buffer, MAX_COMMANDS, file) != NULL)
+    while (fgets(buffer, MAX_COMMANDS_LEN, file) != NULL)
     {
         print(buffer);
         unparsedCommand = buffer;
         unparsedCommand[strlen(unparsedCommand)-1] = '\0';
+        command_copy = (char*)malloc(sizeof(char)*strlen(unparsedCommand));
         //command_copy = copy_command(unparsedCommand);
         strcpy(command_copy, unparsedCommand);
         //strcpy(sec_copy, command_copy);
-        if (strlen(unparsedCommand) > MAX_LEN)
+        if (strlen(unparsedCommand) > MAX_LENGTH)
             error("Very long command, it exceeds 512 bytes!");
         //strcpy(sec_copy, unparsedCommand);
         if (handle_empty())
@@ -109,13 +109,13 @@ void runBatchMode()
 
 void partition_command()
 {
-    commandName = (char*)malloc(sizeof(char)*(MAX_LEN/2));
+    commandName = (char*)malloc(sizeof(char)*(MAX_LENGTH/2));
     strcpy(commandName, "./bin/bash");
     argList = (char**)malloc(sizeof(char*)*(4));
     argList[0] ="/bin/bash";
     argList[1] = "-c";
     int len = 0;
-    char tmp[MAX_LEN];
+    char tmp[MAX_LENGTH];
     for (int i = 0; i < sizeOfWords; i++)
     {
         puts(parsedCommand[i]);
@@ -130,9 +130,6 @@ void partition_command()
     tmp[len] = '\0';
     print(tmp);
     argList[2] = tmp;
-//    print(argList[0]);
-//    print(argList[1]);
-//    print(argList[2]);
     argList[3] = NULL;
 }
 
@@ -154,13 +151,13 @@ bool handle_empty()
 
 bool handle(int argc, char** args)
 {
-    if (argc == 1)
+    if (argc == 2)
     {
         // Requires more handling.
         file_directory = args[1];
         runner = &runBatchMode;
     }
-    else if (argc == 2)
+    else if (argc == 1)
         runner = &runInteractiveMode;
     else
         return false;
@@ -174,36 +171,6 @@ void error(char* msg)
 
 }
 
-void print(char* msg)
-{
-    printf("%s", msg);
-    // Don't forget the logger.
-}
 
-void save_history()
-{
-    FILE* file;
-    file = fopen("history.txt", "w");
-    for (int line = 0; line < command_counter; line++)
-    {
-        fputs(history[line], file);
-        fputc('\n', file);
-    }
-    fclose(file);
-}
 
-void load_history()
-{
-    FILE* file;
-    if (access("history.txt", F_OK) != -1)
-    {
-        file = fopen("history.txt", "r");
-        char buffer[MAX_COMMANDS][MAX_LEN];
-        while (fgets(buffer[command_counter], MAX_LEN, file) != NULL)
-        {
-            //[command_counter][strlen(buffer[command_counter])] = '\0';
-            add_command(buffer[command_counter]);
-        }
-        fclose(file);
-    }
-}
+

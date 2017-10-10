@@ -14,4 +14,10 @@ struct command_properties
 
 char* copy_command(char* comm);
 
+/**
+* This function is resposible for printing status in both terminal
+* and logger file.
+*/
+void print(char* msg);
+
 #endif // COMMAND_UTILS_H_INCLUDED

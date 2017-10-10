@@ -6,6 +6,7 @@
 #include "commands.h"
 #include "tokenizer.h"
 #include "command_utils.h"
+#include "file_service.h"
 #ifndef SHELLCONTROLLER_H_INCLUDED
 #define SHELLCONTROLLER_H_INCLUDED
 
@@ -42,15 +43,6 @@ void runBatchMode();
 */
 void partition_command();
 
-/**
-* This function saves history commands entered by the user in a file.
-*/
-void save_history();
-
-/**
-* This function loads the history commands entered by the user from a file.
-*/
-void load_history();
 
 /**
 * Reports an error and prints it in standard std and logger file.
@@ -74,11 +66,7 @@ bool handle_exit();
 */
 bool handle(int argc, char** args);
 
-/**
-* This function is resposible for printing status in both terminal
-* and logger file.
-*/
-void print(char* msg);
+
 
 
 #endif // SHELLCONTROLLER_H_INCLUDED

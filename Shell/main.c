@@ -4,6 +4,6 @@
 
 int main(int argc, char* args[])
 {
-    startShell(1, args);
+    startShell(argc, args);
     return 0;
 }
