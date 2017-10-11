@@ -52,7 +52,8 @@ void handle_assignment(char** command)
                 break;
             }
     }
-
+    if (equalIndex == -1)
+        return;
     properties->type = ASSIGNMENT;
     // Dynamically allocate the size of string before and after assignment.
     //properties->beforeEqual = (char*)malloc(sizeof(char)*(equalIndex+10));
@@ -92,19 +93,24 @@ void handle_command(char** command)
                         int k;
                         for (k = j+1; k < strlen(command[i]) && isalpha(command[i][k]); k++)
                         {
-                            current[k-j] = command[i][k];
+                            current[k-j-1] = command[i][k];
                         }
-                        current[k] = '\0';
+                        current[k-j-1] = '\0';
+                       // puts(current);
+                       // puts(look_up_variable(current));
                         if (strcmp(look_up_variable(current), ""))
                         {
                             char* value = look_up_variable(current);
-                            for (int counter = 0; counter < strlen(current); counter++)
+                            for (int counter = 0; counter < strlen(current)+1; counter++)
+                            {
                                 memmove(&command[i][j], &command[i][j+1], strlen(command[i]) - j);
-                            insert_substring(command[i], value, j);
+                            }
+                            insert_substring(command[i], value, j+1);
                         }
                     }
                 }
             }
+           // printf("The value of new string is: %s", command[i]);
         }
     }
 }
