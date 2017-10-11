@@ -8,8 +8,8 @@ struct command_properties
     //char** arguments;
     char* type;
     bool foreground;
-    char beforeEqual[200];
-    char afterEqual[200];
+    char beforeEqual[256];
+    char afterEqual[256];
 };
 
 char* copy_command(char* comm);
@@ -19,5 +19,11 @@ char* copy_command(char* comm);
 * and logger file.
 */
 void print(char* msg);
+
+/**
+* Reports an error and prints it in standard std and logger file.
+*/
+void error(char* msg);
+
 
 #endif // COMMAND_UTILS_H_INCLUDED

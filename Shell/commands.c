@@ -37,6 +37,7 @@ void cd(const char* path)
 {
 
 }
+
 void echo(const char* msg)
 {
 //    //puts(msg);
@@ -68,9 +69,25 @@ void echo(const char* msg)
 //    message[counter] = '\0';
 //    print(message);
 }
+
 void assignment(const char* var, const char* value)
 {
 
+}
+
+bool handle_exit()
+{
+    if (!strcmp(parsedCommand[0], "exit") && sizeOfWords == 1)
+    {
+        print("shell is terminated!");
+        return true;
+    }
+    return false;
+}
+
+bool handle_empty()
+{
+    return !strcmp("", unparsedCommand);
 }
 
 void print_history()

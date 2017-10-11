@@ -2,6 +2,12 @@
 
 const int MAX_LENGTH = 512;
 const int MAX_COMMANDS_LEN = 1000;
+const int COMMAND_WORDS_SIZE = 4;
+const int GENERAL_COMMAND_ID = 0;
+const int GENERAL_COMMAND_OPTION_ID = 1;
+const int COMMAND_INDEX = 2;
+const int COMMAND_NULL_TERMINATOR = 3;
+
 
 /**
 * This function pointer points to the mode-function of the command
@@ -14,7 +20,7 @@ void startShell(int argc, char* args[])
     unparsedCommand = (char*)malloc((size_t)MAX_LENGTH * sizeof(char));
     history = (char**)malloc((size_t)MAX_COMMANDS_LEN * sizeof(char*));
     load_history();
-    if (!handle(argc, args))
+    if (!handle_mode(argc, args))
     {
         puts("No such file or directory specified!\n");
         return;
@@ -44,13 +50,16 @@ void runInteractiveMode()
             print_history();
         else
         {
-            partition_command();
-    //        if (!strcmp(commandName, "echo"))
-    //            echo(argList[1]);
-    //        else if (!strcmp(commandName, "cd"))
-    //            cd(argList);
-    //        else
-            general_shell_command(argList);
+            if (!strcmp(commandProperties->type, "assignment"))
+            {
+                puts("This is an assignment command!");
+            }
+            else
+            {
+                partition_command();
+                general_shell_command(argList);
+
+            }
         }
         add_command(command_copy[command_counter]);
     }
@@ -84,6 +93,7 @@ void runBatchMode()
             continue;
         parsedCommand = normalize(copy_command(command_copy));
         commandProperties = parse(parsedCommand);
+        free(command_copy);
         if (commandProperties->type == "comment")
             continue;
         if (handle_exit())
@@ -109,16 +119,15 @@ void runBatchMode()
 
 void partition_command()
 {
-    commandName = (char*)malloc(sizeof(char)*(MAX_LENGTH/2));
-    strcpy(commandName, "./bin/bash");
-    argList = (char**)malloc(sizeof(char*)*(4));
-    argList[0] ="/bin/bash";
-    argList[1] = "-c";
+    /// Here we have to handle home directory with cd.
+    argList = (char**)malloc(sizeof(char*)*(COMMAND_WORDS_SIZE));
+    argList[GENERAL_COMMAND_ID] ="/bin/bash";
+    argList[GENERAL_COMMAND_OPTION_ID] = "-c";
     int len = 0;
     char tmp[MAX_LENGTH];
     for (int i = 0; i < sizeOfWords; i++)
     {
-        puts(parsedCommand[i]);
+        //puts(parsedCommand[i]);
         len += strlen(parsedCommand[i]);
         if (i == 0)
             strcpy(tmp, parsedCommand[i]);
@@ -128,28 +137,13 @@ void partition_command()
             strcat(tmp, " "), len++;
     }
     tmp[len] = '\0';
-    print(tmp);
-    argList[2] = tmp;
-    argList[3] = NULL;
+    //print(tmp);
+    argList[COMMAND_INDEX] = tmp;
+    argList[COMMAND_NULL_TERMINATOR] = NULL;
 }
 
 
-bool handle_exit()
-{
-    if (!strcmp(parsedCommand[0], "exit") && sizeOfWords == 1)
-    {
-        print("shell is terminated!");
-        return true;
-    }
-    return false;
-}
-
-bool handle_empty()
-{
-    return !strcmp("", unparsedCommand);
-}
-
-bool handle(int argc, char** args)
+bool handle_mode(int argc, char** args)
 {
     if (argc == 2)
     {
@@ -163,14 +157,3 @@ bool handle(int argc, char** args)
         return false;
     return true;
 }
-
-void error(char* msg)
-{
-    perror(msg);
-    // Here goes dealing with logger file.
-
-}
-
-
-
-
