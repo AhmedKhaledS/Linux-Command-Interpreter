@@ -3,8 +3,11 @@
 #ifndef VARIABLES_H_INCLUDED
 #define VARIABLES_H_INCLUDED
 
+struct variable
+{
+    char *key, *value;
+}table[100];
 
-char* table[100];
 int lastIndex;
 
 void set_variable(const char* key, char* value);

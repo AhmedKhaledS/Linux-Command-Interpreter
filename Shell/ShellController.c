@@ -50,9 +50,10 @@ void runInteractiveMode()
             print_history();
         else
         {
-            if (!strcmp(commandProperties->type, "assignment"))
+            if (!strcmp(commandProperties->type, "assignment") && sizeOfWords == 1)
             {
                 puts("This is an assignment command!");
+                assignment(commandProperties->beforeEqual, commandProperties->afterEqual);
             }
             else
             {

@@ -64,8 +64,8 @@ void handle_assignment(char** command)
         properties->afterEqual[i-equalIndex-1] = command[0][i];
     properties->afterEqual[strlen(command[0])-equalIndex-1] = '\0';
     // print("assignment\n");
-    printf("left operand: %s\n", properties->beforeEqual);
-    printf("after operand: %s\n", properties->afterEqual);
+//    printf("left operand: %s\n", properties->beforeEqual);
+//    printf("after operand: %s\n", properties->afterEqual);
 }
 
 void handle_command(char** command)

@@ -72,7 +72,10 @@ void echo(const char* msg)
 
 void assignment(const char* var, const char* value)
 {
-
+//    puts(var);
+//    puts(value);
+    set_variable(var, value);
+    puts(look_up_variable(var));
 }
 
 bool handle_exit()
