@@ -7,6 +7,7 @@
 #include "tokenizer.h"
 #include "command_utils.h"
 #include "file_service.h"
+#include "environment.h"
 #ifndef SHELLCONTROLLER_H_INCLUDED
 #define SHELLCONTROLLER_H_INCLUDED
 

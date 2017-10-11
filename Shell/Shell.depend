@@ -4,7 +4,7 @@
 	<stdlib.h>
 	"ShellController.h"
 
-1507715185 /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.h
+1507724885 /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.h
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
@@ -14,8 +14,9 @@
 	"tokenizer.h"
 	"command_utils.h"
 	"file_service.h"
+	"environment.h"
 
-1507723738 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
+1507725033 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
 	"ShellController.h"
 
 1507723534 source:/home/ahmed/Linux-Command-Interpreter/Shell/command_parser.c
@@ -50,7 +51,7 @@
 	<string.h>
 	"ShellController.h"
 
-1507716329 source:/home/ahmed/Linux-Command-Interpreter/Shell/variables.c
+1507723759 source:/home/ahmed/Linux-Command-Interpreter/Shell/variables.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -85,7 +86,7 @@
 	<stdlib.h>
 	"ShellController.h"
 
-1507722932 source:/home/ahmed/Linux-Command-Interpreter/Shell/environment.c
+1507724776 source:/home/ahmed/Linux-Command-Interpreter/Shell/environment.c
 	"environment.h"
 
 1507722493 /home/ahmed/Linux-Command-Interpreter/Shell/environment.h

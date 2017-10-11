@@ -19,6 +19,7 @@ void startShell(int argc, char* args[])
 {
     unparsedCommand = (char*)malloc((size_t)MAX_LENGTH * sizeof(char));
     history = (char**)malloc((size_t)MAX_COMMANDS_LEN * sizeof(char*));
+    chdir(getenv("HOME"));
     load_history();
     if (!handle_mode(argc, args))
     {
@@ -75,7 +76,8 @@ void runBatchMode()
     FILE* file;
     char buffer[MAX_LENGTH];
     char* command_copy;
-    file = fopen(file_directory, "r");
+    //printf("%s\n", file_directory);
+    file = fopen("./Linux_Command-Interpreter/Shell/test.txt", "r");
     if (file == NULL)
     {
         error("No such file is found!");
@@ -153,13 +155,13 @@ void partition_command()
 
 bool handle_mode(int argc, char** args)
 {
-    if (argc == 2)
+    if (argc == 1)
     {
         // Requires more handling.
         file_directory = args[1];
         runner = &runBatchMode;
     }
-    else if (argc == 1)
+    else if (argc == 2)
         runner = &runInteractiveMode;
     else
         return false;
