@@ -77,6 +77,7 @@ void handle_command(char** command)
         properties->type = COMMAND;
        // print("command\n");
     }
+
     if (!strcmp(command[0], ECHO))
     {
         for (int i = 1; i < sizeOfWords; i++)
@@ -110,7 +111,7 @@ void handle_command(char** command)
                     }
                 }
             }
-           // printf("The value of new string is: %s", command[i]);
+            printf("The value of new string is: %s\n", command[i]);
         }
     }
 }

@@ -14,8 +14,9 @@ char** normalize(char* line)
     char* token = strtok(line, " ");
     while (token != NULL)
     {
-        normalizedCommand[sizeOfWords] = (char*)malloc(sizeof(char)*strlen(token));
-        normalizedCommand[sizeOfWords] = token;
+        normalizedCommand[sizeOfWords] = (char*)malloc(sizeof(char)*MAX_SIZE);
+        strcpy(normalizedCommand[sizeOfWords], token);
+        normalizedCommand[sizeOfWords][strlen(token)] = '\0';
         sizeOfWords++;
         token = strtok(NULL, " ");
     }
