@@ -70,7 +70,6 @@ void handle_assignment(char** command)
 
 void handle_command(char** command)
 {
-    int quotes = 0;
     if (properties->type != COMMENT)
     {
         properties->type = COMMAND;
@@ -82,34 +81,28 @@ void handle_command(char** command)
         {
             for (int j = 0; j < strlen(command[i]); j++)
             {
-                if (command[i][j] == '"')
-                    quotes++;
-                else if (quotes % 2 == 0)
+                char current[MAX_LEN_VAR];
+                if (command[i][j] == '$')
                 {
-                    char current[MAX_LEN_VAR];
-                    if (command[i][j] == '$')
+                    int k;
+                    for (k = j+1; k < strlen(command[i]) && isalpha(command[i][k]); k++)
                     {
-                        int k;
-                        for (k = j+1; k < strlen(command[i]) && isalpha(command[i][k]); k++)
+                        current[k-j-1] = command[i][k];
+                    }
+                    current[k-j-1] = '\0';
+                    // puts(current);
+                    // puts(look_up_variable(current));
+                    if (strcmp(look_up_variable(current), ""))
+                    {
+                        char* value = look_up_variable(current);
+                        for (int counter = 0; counter < strlen(current)+1; counter++)
                         {
-                            current[k-j-1] = command[i][k];
+                            memmove(&command[i][j], &command[i][j+1], strlen(command[i]) - j);
                         }
-                        current[k-j-1] = '\0';
-                       // puts(current);
-                       // puts(look_up_variable(current));
-                        if (strcmp(look_up_variable(current), ""))
-                        {
-                            char* value = look_up_variable(current);
-                            for (int counter = 0; counter < strlen(current)+1; counter++)
-                            {
-                                memmove(&command[i][j], &command[i][j+1], strlen(command[i]) - j);
-                            }
-                            insert_substring(command[i], value, j+1);
-                        }
+                        insert_substring(command[i], value, j+1);
                     }
                 }
             }
-//            printf("The value of new string is: %s\n", command[i]);
         }
     }
     if (!strcmp(command[0], CD) || !strcmp(command[0], ECHO))

@@ -20,10 +20,5 @@ char* copy_command(char* comm);
 */
 void print(char* msg);
 
-/**
-* Reports an error and prints it in standard std and logger file.
-*/
-void error(char* msg);
-
 
 #endif // COMMAND_UTILS_H_INCLUDED

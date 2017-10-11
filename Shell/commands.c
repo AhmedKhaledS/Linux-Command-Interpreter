@@ -5,8 +5,9 @@
 #include <sys/types.h>
 #include <string.h>
 #include "variables.h"
+#include "sys/wait.h"
 
-const int MAX_VAR_LEN = 200;
+const int MAX_VAR_LEN = 256;
 const int MAX_MSG_LEN = 512;
 void general_shell_command(char** argumentList)
 {
@@ -15,10 +16,6 @@ void general_shell_command(char** argumentList)
     pid = fork();
     if (pid == 0)
     {
-//        print("I am the child process");
-//        char cwd[100];
-//        getcwd(cwd, sizeof(cwd));
-//        print(cwd);
         execvp(*argumentList, argumentList);
         perror("An error has occured while executing child process!");
     }
@@ -27,7 +24,10 @@ void general_shell_command(char** argumentList)
         if (commandProperties->foreground)
         {
             print("waiting for child\n");
-            while (wait(&status) != pid);
+            do
+            {
+                waitpid(pid, &status, WUNTRACED);
+            } while(!WIFEXITED(status) && !WIFSIGNALED(status));
         }
     }
     return;
@@ -70,7 +70,6 @@ void print_history()
     for (int i = 0; i < command_counter; i++)
     {
         print(history[i]);
-        print("\n");
     }
 }
 void add_command(char* comm)

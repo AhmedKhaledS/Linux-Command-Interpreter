@@ -19,19 +19,24 @@ void startShell(int argc, char* args[])
 {
     unparsedCommand = (char*)malloc((size_t)MAX_LENGTH * sizeof(char));
     history = (char**)malloc((size_t)MAX_COMMANDS_LEN * sizeof(char*));
+    getcwd(shell_directory, sizeof(shell_directory));
     chdir(getenv("HOME"));
+    open_logging_file();
     getcwd(current_directory, sizeof(current_directory));
     load_history();
     if (!handle_mode(argc, args))
     {
-        puts("No such file or directory specified!\n");
+        log("No such file or directory specified while opening batch-file!\n");
+        puts("No such file or directory specified while opening batch-file!\n");
         return;
     }
     (*runner)();
+    close_logging_file();
 }
 
 void runInteractiveMode()
 {
+    log("Interactive mode is activated.\n");
     puts("Interactive mode is activated.\n");
     while (true)
     {
@@ -42,10 +47,21 @@ void runInteractiveMode()
         strcpy(command_copy[command_counter], unparsedCommand);
         command_copy[command_counter][strlen(unparsedCommand)] = '\0';
         if (strlen(unparsedCommand) > MAX_LENGTH)
-            error("Very long command, it exceeds 512 bytes!");
+        {
+            print("Very long command, it exceeds 512 bytes!");
+            log("Very long command, it exceeds 512 bytes!");
+            continue;
+        }
+        if(handle_empty())
+            continue;
         parsedCommand = normalize(unparsedCommand);
         commandProperties = parse(parsedCommand);
-        if (handle_exit())
+        log("Command properties is extracted successfully.\n");
+        log("Command is parsed successfully.\n");
+        log("The command is starting execution ...\n");
+        if (commandProperties->type == "comment")
+            continue;
+        else if (handle_exit())
             return;
         else if (!strcmp(parsedCommand[0], "history") && sizeOfWords == 1)
             print_history();
@@ -63,22 +79,23 @@ void runInteractiveMode()
             {
                 partition_command();
                 general_shell_command(argList);
-
             }
         }
         add_command(command_copy[command_counter]);
         save_history();
+        log("Command is saved to the history file.\n");
     }
 }
 
 void runBatchMode()
 {
+    log("Batch mode is activated.\n");
     puts("Batch mode is activated.\n");
     FILE* file;
     char buffer[MAX_LENGTH];
     char* command_copy;
     //printf("%s\n", file_directory);
-    file = fopen(file_directory, "r");
+    file = fopen("test.txt", "r");
     if (file == NULL)
     {
         error("No such file is found!");
@@ -94,13 +111,19 @@ void runBatchMode()
         strcpy(command_copy, unparsedCommand);
         //strcpy(sec_copy, command_copy);
         if (strlen(unparsedCommand) > MAX_LENGTH)
-            error("Very long command, it exceeds 512 bytes!");
+        {
+            print("Very long command, it exceeds 512 bytes!");
+            log("Very long command, it exceeds 512 bytes!");
+            continue;
+        }
         //strcpy(sec_copy, unparsedCommand);
         if (handle_empty())
             continue;
         parsedCommand = normalize(copy_command(command_copy));
         commandProperties = parse(parsedCommand);
-        free(command_copy);
+        log("Command properties is extracted successfully.\n");
+        log("Command is parsed successfully.\n");
+        log("The command is starting execution...\n");
         if (commandProperties->type == "comment")
             continue;
         if (handle_exit())
@@ -117,11 +140,12 @@ void runBatchMode()
             {
                 partition_command();
                 general_shell_command(argList);
-
             }
         }
         add_command(copy_command(command_copy));
+        free(command_copy);
         save_history();
+        log("Command is saved to the history file.\n");
     }
     fclose(file);
     return;
@@ -138,7 +162,6 @@ void partition_command()
     char tmp[MAX_LENGTH];
     for (int i = 0; i < sizeOfWords; i++)
     {
-        //puts(parsedCommand[i]);
         len += strlen(parsedCommand[i]);
         if (i == 0)
             strcpy(tmp, parsedCommand[i]);
@@ -148,7 +171,6 @@ void partition_command()
             strcat(tmp, " "), len++;
     }
     tmp[len] = '\0';
-    //print(tmp);
     argList[COMMAND_INDEX] = tmp;
     argList[COMMAND_NULL_TERMINATOR] = NULL;
 }
@@ -158,7 +180,6 @@ bool handle_mode(int argc, char** args)
 {
     if (argc == 2)
     {
-        // Requires more handling.
         file_directory = args[1];
         runner = &runBatchMode;
     }

@@ -13,13 +13,5 @@ char* copy_command(char* comm)
 
 void print(char* msg)
 {
-    printf("%s", msg);
-    // Don't forget the logger.
-}
-
-void error(char* msg)
-{
-    perror(msg);
-    // Here goes dealing with logger file.
-
+    printf("%s\n", msg);
 }

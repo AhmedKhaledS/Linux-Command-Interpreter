@@ -8,6 +8,7 @@
 #include "command_utils.h"
 #include "file_service.h"
 #include "environment.h"
+#include "logger.h"
 #ifndef SHELLCONTROLLER_H_INCLUDED
 #define SHELLCONTROLLER_H_INCLUDED
 #define  MAX_PATH_LEN  1024
@@ -18,6 +19,7 @@
 
 char* unparsedCommand;
 char current_directory[MAX_PATH_LEN];
+char shell_directory[MAX_PATH_LEN];
 char** parsedCommand;
 char* commandName;
 char** argList;
