@@ -10,9 +10,14 @@
 #include "environment.h"
 #ifndef SHELLCONTROLLER_H_INCLUDED
 #define SHELLCONTROLLER_H_INCLUDED
-
+#define  MAX_PATH_LEN  1024
+#define ANSI_COLOR_BLUE    "\x1b[34m"
+#define ANSI_COLOR_RESET   "\x1b[0m"
+#define ANSI_COLOR_YELLOW  "\x1b[33m"
+#define ANSI_COLOR_GREEN   "\x1b[32m"
 
 char* unparsedCommand;
+char current_directory[MAX_PATH_LEN];
 char** parsedCommand;
 char* commandName;
 char** argList;

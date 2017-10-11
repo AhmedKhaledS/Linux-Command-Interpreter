@@ -35,7 +35,9 @@ void general_shell_command(char** argumentList)
 
 void cd(const char* path)
 {
-    chdir(path);
+    strcpy(current_directory, path);
+    chdir(current_directory);
+    getcwd(current_directory, sizeof(current_directory));
 }
 
 void echo(const char* msg)
@@ -45,10 +47,7 @@ void echo(const char* msg)
 
 void assignment(const char* var, const char* value)
 {
-//    puts(var);
-//    puts(value);
     set_variable(var, value);
-    puts(look_up_variable(var));
 }
 
 bool handle_exit()

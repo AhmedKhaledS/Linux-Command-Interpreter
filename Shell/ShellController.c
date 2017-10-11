@@ -20,6 +20,7 @@ void startShell(int argc, char* args[])
     unparsedCommand = (char*)malloc((size_t)MAX_LENGTH * sizeof(char));
     history = (char**)malloc((size_t)MAX_COMMANDS_LEN * sizeof(char*));
     chdir(getenv("HOME"));
+    getcwd(current_directory, sizeof(current_directory));
     load_history();
     if (!handle_mode(argc, args))
     {
@@ -35,7 +36,7 @@ void runInteractiveMode()
     while (true)
     {
         fflush(stdout);
-        printf("Shell> ");
+        printf(ANSI_COLOR_BLUE "Shell:" ANSI_COLOR_GREEN "%s>" ANSI_COLOR_RESET, current_directory);
         gets(unparsedCommand);
         char command_copy[MAX_LENGTH][MAX_LENGTH];
         strcpy(command_copy[command_counter], unparsedCommand);
@@ -77,7 +78,7 @@ void runBatchMode()
     char buffer[MAX_LENGTH];
     char* command_copy;
     //printf("%s\n", file_directory);
-    file = fopen("./Linux_Command-Interpreter/Shell/test.txt", "r");
+    file = fopen(file_directory, "r");
     if (file == NULL)
     {
         error("No such file is found!");
@@ -155,13 +156,13 @@ void partition_command()
 
 bool handle_mode(int argc, char** args)
 {
-    if (argc == 1)
+    if (argc == 2)
     {
         // Requires more handling.
         file_directory = args[1];
         runner = &runBatchMode;
     }
-    else if (argc == 2)
+    else if (argc == 1)
         runner = &runInteractiveMode;
     else
         return false;

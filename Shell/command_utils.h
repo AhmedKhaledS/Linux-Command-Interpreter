@@ -1,7 +1,7 @@
-#include <stdbool.h>
-#include <string.h>
 #ifndef COMMAND_UTILS_H_INCLUDED
 #define COMMAND_UTILS_H_INCLUDED
+#include <stdbool.h>
+#include <string.h>
 
 struct command_properties
 {

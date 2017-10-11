@@ -14,8 +14,8 @@ struct command_properties* parse(char** command)
     properties = malloc(sizeof(struct command_properties));
     handle_comment(command);
     handle_foreground(command);
-    handle_assignment(command);
     handle_command(command);
+    handle_assignment(command);
     return properties;
 }
 
@@ -24,7 +24,6 @@ void handle_comment(char** command)
     if (command[0][0] == '#')
     {
         properties->type = COMMENT;
-//        print("comment\n");
     }
 }
 
@@ -72,10 +71,9 @@ void handle_assignment(char** command)
 void handle_command(char** command)
 {
     int quotes = 0;
-    if (properties->type != COMMENT && properties->type != ASSIGNMENT)
+    if (properties->type != COMMENT)
     {
         properties->type = COMMAND;
-       // print("command\n");
     }
 
     if (!strcmp(command[0], ECHO))
@@ -109,13 +107,12 @@ void handle_command(char** command)
                             insert_substring(command[i], value, j+1);
                         }
                     }
-
                 }
             }
 //            printf("The value of new string is: %s\n", command[i]);
         }
     }
-    else if (!strcmp(command[0], CD))
+    if (!strcmp(command[0], CD) || !strcmp(command[0], ECHO))
     {
         for (int i = 1; i < sizeOfWords; i++)
         {
