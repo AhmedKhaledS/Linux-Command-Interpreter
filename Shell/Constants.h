@@ -8,6 +8,7 @@ const char* EXIT = "exit";
 const char* CD = "cd";
 const char* ECHO = "echo";
 const char* HISTORY = "history";
+const char* HOME = "HOME";
 
 
 #endif // CONSTANTS_H_INCLUDED

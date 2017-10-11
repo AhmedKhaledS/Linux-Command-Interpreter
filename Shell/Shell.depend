@@ -15,10 +15,10 @@
 	"command_utils.h"
 	"file_service.h"
 
-1507717632 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
+1507723738 source:/home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
 	"ShellController.h"
 
-1507719701 source:/home/ahmed/Linux-Command-Interpreter/Shell/command_parser.c
+1507723534 source:/home/ahmed/Linux-Command-Interpreter/Shell/command_parser.c
 	<stdio.h>
 	<stdlib.h>
 	"command_parser.h"
@@ -37,7 +37,7 @@
 	<stdbool.h>
 	<string.h>
 
-1507717626 source:/home/ahmed/Linux-Command-Interpreter/Shell/commands.c
+1507723667 source:/home/ahmed/Linux-Command-Interpreter/Shell/commands.c
 	<stdio.h>
 	"commands.h"
 	<stdlib.h>
@@ -58,12 +58,12 @@
 
 1507300175 /home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.h
 
-1507719849 source:/home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.c
+1507719875 source:/home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.c
 	<stdio.h>
 	<stdlib.h>
 	"tokenizer.h"
 
-1507247226 /home/ahmed/Linux-Command-Interpreter/Shell/Constants.h
+1507723333 /home/ahmed/Linux-Command-Interpreter/Shell/Constants.h
 
 1507677375 /home/ahmed/Linux-Command-Interpreter/Shell/commands.h
 	"ShellController.h"
@@ -77,11 +77,16 @@
 	"commands.h"
 	"variables.h"
 
-1507677128 source:/home/ahmed/Linux-Command-Interpreter/Shell/file_service.c
+1507721634 source:/home/ahmed/Linux-Command-Interpreter/Shell/file_service.c
 	"file_service.h"
 
 1507676787 /home/ahmed/Linux-Command-Interpreter/Shell/file_service.h
 	<stdio.h>
 	<stdlib.h>
 	"ShellController.h"
+
+1507722932 source:/home/ahmed/Linux-Command-Interpreter/Shell/environment.c
+	"environment.h"
+
+1507722493 /home/ahmed/Linux-Command-Interpreter/Shell/environment.h
 

@@ -26,7 +26,6 @@ void startShell(int argc, char* args[])
         return;
     }
     (*runner)();
-    save_history();
 }
 
 void runInteractiveMode()
@@ -48,11 +47,14 @@ void runInteractiveMode()
             return;
         else if (!strcmp(parsedCommand[0], "history") && sizeOfWords == 1)
             print_history();
+        else if (!strcmp(parsedCommand[0], "cd") && sizeOfWords == 2)
+        {
+            cd(parsedCommand[1]);
+        }
         else
         {
             if (!strcmp(commandProperties->type, "assignment") && sizeOfWords == 1)
             {
-                puts("This is an assignment command!");
                 assignment(commandProperties->beforeEqual, commandProperties->afterEqual);
             }
             else
@@ -63,6 +65,7 @@ void runInteractiveMode()
             }
         }
         add_command(command_copy[command_counter]);
+        save_history();
     }
 }
 
@@ -103,15 +106,19 @@ void runBatchMode()
             print_history();
         else
         {
-            partition_command();
-    //        if (!strcmp(commandName, "echo"))
-    //            echo(argList[1]);
-    //        else if (!strcmp(commandName, "cd"))
-    //            cd(argList);
-    //        else
-            general_shell_command(argList);
+            if (!strcmp(commandProperties->type, "assignment") && sizeOfWords == 1)
+            {
+                assignment(commandProperties->beforeEqual, commandProperties->afterEqual);
+            }
+            else
+            {
+                partition_command();
+                general_shell_command(argList);
+
+            }
         }
         add_command(copy_command(command_copy));
+        save_history();
     }
     fclose(file);
     return;

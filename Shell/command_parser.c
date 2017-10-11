@@ -24,7 +24,7 @@ void handle_comment(char** command)
     if (command[0][0] == '#')
     {
         properties->type = COMMENT;
-        print("comment\n");
+//        print("comment\n");
     }
 }
 
@@ -33,7 +33,7 @@ void handle_foreground(char** command)
     if (properties->type == COMMENT)
         return;
     if (command[sizeOfWords-1][strlen(command[sizeOfWords-1]) - 1] == '&')
-        properties->foreground = false, print("background");
+        properties->foreground = false;
     else
         properties->foreground = true;
 
@@ -109,9 +109,34 @@ void handle_command(char** command)
                             insert_substring(command[i], value, j+1);
                         }
                     }
+
                 }
             }
-            printf("The value of new string is: %s\n", command[i]);
+//            printf("The value of new string is: %s\n", command[i]);
+        }
+    }
+    else if (!strcmp(command[0], CD))
+    {
+        for (int i = 1; i < sizeOfWords; i++)
+        {
+            for (int j = 0; j < strlen(command[i]); j++)
+            {
+                if (command[i][j] == '~')
+                {
+                    if (strcmp(look_up_variable(HOME), ""))
+                    {
+                        char* value = look_up_variable(HOME);
+                        memmove(&command[i][j], &command[i][j+1], strlen(command[i]) - j);
+                        insert_substring(command[i], value, j+1);
+                    }
+                    else
+                    {
+                        memmove(&command[i][j], &command[i][j+1], strlen(command[i]) - j);
+                        insert_substring(command[i], getenv(HOME), j+1);
+                        printf("Home :  %s\n", command[i]);
+                    }
+                }
+            }
         }
     }
 }

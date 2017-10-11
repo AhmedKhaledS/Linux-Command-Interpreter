@@ -35,39 +35,12 @@ void general_shell_command(char** argumentList)
 
 void cd(const char* path)
 {
-
+    chdir(path);
 }
 
 void echo(const char* msg)
 {
-//    //puts(msg);
-//    char varChecker[MAX_VAR_LEN];
-//    char message[MAX_MSG_LEN];
-//    int counter = 0;
-//    for (int i = 0; i < strlen(msg); i++)
-//    {
-//        if (msg[i] == "\"")
-//            continue;
-//        if (msg[i] == "$")
-//        {
-//            for (int j = i+1; j < strlen(msg) || msg[j] == "\""; j++)
-//            {
-//                varChecker[j-i-1] = msg[j];
-//                i = j;
-//            }
-//            if (look_up_variable(varChecker) != "")
-//            {
-//                char* temp = look_up_variable(varChecker);
-//                for (int j = 0; j < strlen(temp); j++)
-//                    message[counter++] = temp[j];
-//            }
-//            continue;
-//
-//        }
-//        message[counter++] = msg[i];
-//    }
-//    message[counter] = '\0';
-//    print(message);
+
 }
 
 void assignment(const char* var, const char* value)

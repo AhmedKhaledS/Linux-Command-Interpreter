@@ -6,12 +6,14 @@ const int MAX_LEN = 513;
 void save_history()
 {
     FILE* file;
-    file = fopen("history.txt", "w");
-    for (int line = 0; line < command_counter; line++)
+    if (access("history.txt", F_OK) != -1)
     {
-        fputs(history[line], file);
-        fputc('\n', file);
+        file = fopen("history.txt", "a");
     }
+    else
+        file = fopen("history.txt", "w");
+    fputs(history[command_counter-1], file);
+    fputc('\n', file);
     fclose(file);
 }
 

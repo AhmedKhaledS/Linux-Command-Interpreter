@@ -27,7 +27,7 @@ const char* look_up_variable(const char* key)
             return table[i].value;
         }
     }
-    error("This variable is not declared!");
+    //error("This variable is not declared!");
     return "";
 }
 
