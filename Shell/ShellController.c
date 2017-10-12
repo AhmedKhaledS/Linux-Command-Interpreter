@@ -98,7 +98,7 @@ void runBatchMode()
     char buffer[MAX_LENGTH];
     char* command_copy;
     //printf("%s\n", file_directory);
-    file = fopen("test.txt", "r");
+    file = fopen(file_directory, "r");
     if (file == NULL)
     {
         error("No such file is found!");
@@ -110,9 +110,7 @@ void runBatchMode()
         unparsedCommand = buffer;
         unparsedCommand[strlen(unparsedCommand)-1] = '\0';
         command_copy = (char*)malloc(sizeof(char)*strlen(unparsedCommand));
-        //command_copy = copy_command(unparsedCommand);
         strcpy(command_copy, unparsedCommand);
-        //strcpy(sec_copy, command_copy);
         if (strlen(unparsedCommand) > MAX_LENGTH)
         {
             print("Very long command, it exceeds 512 bytes!");
@@ -142,6 +140,7 @@ void runBatchMode()
             else
             {
                 partition_command();
+                //printf("%s %s %s", argList[0], argList[1], argList[2]);
                 general_shell_command(argList);
             }
         }
@@ -174,7 +173,8 @@ void partition_command()
             strcat(tmp, " "), len++;
     }
     tmp[len] = '\0';
-    argList[COMMAND_INDEX] = tmp;
+    argList[COMMAND_INDEX] = (char*)malloc(sizeof(char)*strlen(tmp));
+    strcpy(argList[COMMAND_INDEX], tmp);
     argList[COMMAND_NULL_TERMINATOR] = NULL;
 }
 
