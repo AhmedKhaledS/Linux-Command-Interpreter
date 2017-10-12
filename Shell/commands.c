@@ -16,6 +16,7 @@ void general_shell_command(char** argumentList)
     pid = fork();
     if (pid == 0)
     {
+        log("Child process is launched.");
         execvp(*argumentList, argumentList);
         perror("An error has occured while executing child process!");
     }

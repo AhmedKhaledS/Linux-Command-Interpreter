@@ -18,7 +18,9 @@ void load_history();
 
 FILE* open_log_file(FILE *file);
 
-void log_msg(FILE *file, char *msg);
+void log_msg(FILE *file, char *msg, int pid);
+
+void log_child_msg(FILE *file, char *msg, int pid);
 
 void close_log_file(FILE *file);
 

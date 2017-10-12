@@ -40,7 +40,7 @@ FILE* open_log_file(FILE *file)
     return file;
 }
 
-void log_msg(FILE *file, char* msg)
+void log_msg(FILE *file, char* msg, int pid)
 {
     time_t rawTime;
     struct tm *info;
@@ -53,9 +53,26 @@ void log_msg(FILE *file, char* msg)
     file = fopen(strcat(tmp, "/log.txt"), "a+");
     if (file == NULL)
         return;
-    fprintf(file, "%s[DEBUG]: %s", buff, msg);
+    fprintf(file, "[%d] %s[DEBUG]: %s\n",pid, buff, msg);
+    fclose(file);
 }
 
+void log_child_msg(FILE *file, char *msg, int pid)
+{
+    time_t rawTime;
+    struct tm *info;
+    char buff[80];
+    char tmp[MAX_LEN];
+    strcpy(tmp, shell_directory);
+    time(&rawTime);
+    info = localtime(&rawTime);
+    strftime(buff, 80, "%x - %I:%M%p", info);
+    file = fopen(strcat(tmp, "/log.txt"), "a+");
+    if (file == NULL)
+        return;
+    fprintf(file, "[%d] %s[DEBUG]: %s\n",pid, buff, msg);
+    fclose(file);
+}
 
 void close_log_file(FILE *file)
 {

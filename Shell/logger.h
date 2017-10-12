@@ -6,6 +6,7 @@
 FILE *log_file;
 FILE* open_logging_file();
 void log(char* msg);
+void log_child_process(int sig);
 void report_error(char* msg);
 void close_logging_file();
 

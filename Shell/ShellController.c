@@ -9,6 +9,7 @@ const int COMMAND_INDEX = 2;
 const int COMMAND_NULL_TERMINATOR = 3;
 
 
+
 /**
 * This function pointer points to the mode-function of the command
 * interpreter.
@@ -26,7 +27,7 @@ void startShell(int argc, char* args[])
     load_history();
     if (!handle_mode(argc, args))
     {
-        log("No such file or directory specified while opening batch-file!\n");
+        log("No such file or directory specified while opening batch-file!");
         puts("No such file or directory specified while opening batch-file!\n");
         return;
     }
@@ -36,13 +37,15 @@ void startShell(int argc, char* args[])
 
 void runInteractiveMode()
 {
-    log("Interactive mode is activated.\n");
+    log("Interactive mode is activated.");
     puts("Interactive mode is activated.\n");
     while (true)
     {
+        signal(SIGCHLD, log_child_process);
         fflush(stdout);
         printf(ANSI_COLOR_BLUE "Shell:" ANSI_COLOR_GREEN "%s>" ANSI_COLOR_RESET, current_directory);
         gets(unparsedCommand);
+
         char command_copy[MAX_LENGTH][MAX_LENGTH];
         strcpy(command_copy[command_counter], unparsedCommand);
         command_copy[command_counter][strlen(unparsedCommand)] = '\0';
@@ -56,9 +59,9 @@ void runInteractiveMode()
             continue;
         parsedCommand = normalize(unparsedCommand);
         commandProperties = parse(parsedCommand);
-        log("Command properties is extracted successfully.\n");
-        log("Command is parsed successfully.\n");
-        log("The command is starting execution ...\n");
+        log("Command properties is extracted successfully.");
+        log("Command is parsed successfully.");
+        log("The command is starting execution...");
         if (commandProperties->type == "comment")
             continue;
         else if (handle_exit())
@@ -83,7 +86,7 @@ void runInteractiveMode()
         }
         add_command(command_copy[command_counter]);
         save_history();
-        log("Command is saved to the history file.\n");
+        log("Command is saved to the history file.");
     }
 }
 
@@ -121,9 +124,9 @@ void runBatchMode()
             continue;
         parsedCommand = normalize(copy_command(command_copy));
         commandProperties = parse(parsedCommand);
-        log("Command properties is extracted successfully.\n");
-        log("Command is parsed successfully.\n");
-        log("The command is starting execution...\n");
+        log("Command properties is extracted successfully.");
+        log("Command is parsed successfully.");
+        log("The command is starting execution...");
         if (commandProperties->type == "comment")
             continue;
         if (handle_exit())

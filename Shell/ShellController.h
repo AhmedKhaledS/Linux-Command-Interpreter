@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <unistd.h>
+#include <signal.h>
 #include "commands.h"
 #include "tokenizer.h"
 #include "command_utils.h"
