@@ -24,7 +24,6 @@ void general_shell_command(char** argumentList)
     {
         if (commandProperties->foreground)
         {
-            print("waiting for child\n");
             do
             {
                 waitpid(pid, &status, WUNTRACED);

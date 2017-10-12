@@ -74,16 +74,15 @@ void handle_command(char** command)
     {
         properties->type = COMMAND;
     }
-
-    if (!strcmp(command[0], ECHO))
+    if (!strcmp(command[0], CD) || !strcmp(command[0], ECHO))
     {
         for (int i = 1; i < sizeOfWords; i++)
         {
             for (int j = 0; j < strlen(command[i]); j++)
             {
-                char current[MAX_LEN_VAR];
                 if (command[i][j] == '$')
                 {
+                    char current[MAX_LEN_VAR];
                     int k;
                     for (k = j+1; k < strlen(command[i]) && isalpha(command[i][k]); k++)
                     {
@@ -102,16 +101,7 @@ void handle_command(char** command)
                         insert_substring(command[i], value, j+1);
                     }
                 }
-            }
-        }
-    }
-    if (!strcmp(command[0], CD) || !strcmp(command[0], ECHO))
-    {
-        for (int i = 1; i < sizeOfWords; i++)
-        {
-            for (int j = 0; j < strlen(command[i]); j++)
-            {
-                if (command[i][j] == '~')
+                else if (command[i][j] == '~')
                 {
                     if (strcmp(look_up_variable(HOME), ""))
                     {
@@ -123,7 +113,6 @@ void handle_command(char** command)
                     {
                         memmove(&command[i][j], &command[i][j+1], strlen(command[i]) - j);
                         insert_substring(command[i], getenv(HOME), j+1);
-                        printf("Home :  %s\n", command[i]);
                     }
                 }
             }

@@ -1,459 +1,69 @@
 ls
 pwd
+clear
+ls
+ls -al
+ls -a -l
+/bin/ls -l -a
+        /bin/ls     -l 
+vim
+gedit &
+ps
+bin/ps
+pwd
+mkdir cs333
+touch cs333/lab1.txt
+cd ~/cs333
+vi lab1.txt
+pwd
+cd ../
+cd ~
+wc cs333/lab1.txt
+cat cs333/lab1.txt
+#this is a comment
+x=5
+echo $x
+echo "hello world"
+echo              	"hello           world"
+history
+clear
 who
-clear
-history
-ls
-pwd
-clear
-exir
-ls
-ls
-ls
-ls
-pwd
-ls
-pwd
-exitr
-ls
-pwd
-ls
-ls
-ls
-pwd
-ls
-ls
-pwd
-who
-clear
-exirt
-'
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
+x=Linux-Command-Interpreter
 echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
+cd $x
 pwd
 ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
-echo $x
-echo "hello world"
-echo              	"hello           world"
-history
-ls
-pwd
 cd Linux-Command-Interpreter
 cd ..
-pwd
-printenv
-PATH=3
-printenv
-ls
-ls -al
-ls -a -l
-/bin/ls -l -a
-        /bin/ls     -l 
-vim
-gedit &
-ps
-bin/ps
-pwd
-mkdir cs333
-touch cs333/lab1.txt
-cd ~/cs333
-vi lab1.txt
-pwd
-cd ../
-cd ~
-wc cs333/lab1.txt
-cat cs333/lab1.txt
-#this is a comment
-x=5
 echo $x
-echo "hello world"
-echo              	"hello           world"
-history
+cd $x
+x=Linux-Command-Interpreter
+x=Linux-Command-Interpreter
+cd $x
+cd ..
+cd $x/Shell
+cd ~
+x=Linux-Command-Interpreter
+cd $x
+cd ~
+cd $x/Shell
+cat akeFile
+x=ahmedkhaled
+y=saadseif
+echo $x $y
+ecgo $x$y
+x=ahmedkhaled
+y=saadseif
+echo $x
+echo $y
+x=ahmedkhaled
+y=saadseif
+echo $x$y
+x=Linux-Command-Interpreter
+y=Shell
+cd $x/$y
+cd ..
+cd ..
+echo $x $y
+echo $x/$y
+echo $x$y
