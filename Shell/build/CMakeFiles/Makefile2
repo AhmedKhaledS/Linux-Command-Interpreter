@@ -50,7 +50,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/ahmed/Linux-Command-Interpreter/Shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmed/Linux-Command-Interpreter/Shell
+CMAKE_BINARY_DIR = /home/ahmed/Linux-Command-Interpreter/Shell/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/Shell.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/ahmed/Linux-Command-Interpreter/Shell
 CMakeFiles/Shell.dir/all:
 	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/depend
 	$(MAKE) -f CMakeFiles/Shell.dir/build.make CMakeFiles/Shell.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles  1 2 3 4 5 6 7 8 9 10
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10
 	@echo "Built target Shell"
 .PHONY : CMakeFiles/Shell.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/Shell.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Shell.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Shell.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles 0
 .PHONY : CMakeFiles/Shell.dir/rule
 
 # Convenience name for target.

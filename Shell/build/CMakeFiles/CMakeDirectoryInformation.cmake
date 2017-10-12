@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/ahmed/Linux-Command-Interpreter/Shell")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ahmed/Linux-Command-Interpreter/Shell")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ahmed/Linux-Command-Interpreter/Shell/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

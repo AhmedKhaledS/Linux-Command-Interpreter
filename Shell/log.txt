@@ -1,397 +1,110 @@
-[2547] 10/12/17 - 03:59AM[DEBUG]: Interactive mode is activated.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command properties is extracted successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command is parsed successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: The command is starting execution...
-[2549] 10/12/17 - 03:59AM[DEBUG]: Child process is launched.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Child process is terminated successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command is saved to the history file.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command properties is extracted successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command is parsed successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: The command is starting execution...
-[2550] 10/12/17 - 03:59AM[DEBUG]: Child process is launched.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Child process is terminated successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command is saved to the history file.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command properties is extracted successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command is parsed successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: The command is starting execution...
-[2551] 10/12/17 - 03:59AM[DEBUG]: Child process is launched.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Child process is terminated successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command is saved to the history file.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command properties is extracted successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: Command is parsed successfully.
-[2547] 10/12/17 - 03:59AM[DEBUG]: The command is starting execution...
-[2577] 10/12/17 - 04:00AM[DEBUG]: Interactive mode is activated.
-[2577] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2577] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2577] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2579] 10/12/17 - 04:00AM[DEBUG]: Batch mode is activated.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2580] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2581] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2582] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2583] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2584] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2585] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2586] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2587] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2589] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2590] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2591] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2592] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2595] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2596] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2603] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2604] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2605] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2606] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2607] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2608] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2609] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2610] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2611] 10/12/17 - 04:00AM[DEBUG]: Child process is launched.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command properties is extracted successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is parsed successfully.
-[2579] 10/12/17 - 04:00AM[DEBUG]: The command is starting execution...
-[2579] 10/12/17 - 04:00AM[DEBUG]: Command is saved to the history file.
-
-[2676] 10/12/17 - 04:01AM[DEBUG]: Interactive mode is activated.
-[2676] 10/12/17 - 04:01AM[DEBUG]: Command properties is extracted successfully.
-[2676] 10/12/17 - 04:01AM[DEBUG]: Command is parsed successfully.
-[2676] 10/12/17 - 04:01AM[DEBUG]: The command is starting execution...
-[2678] 10/12/17 - 04:01AM[DEBUG]: Child process is launched.
-[2676] 10/12/17 - 04:01AM[DEBUG]: Child process is terminated successfully.
-[2676] 10/12/17 - 04:01AM[DEBUG]: Command is saved to the history file.
-[2676] 10/12/17 - 04:01AM[DEBUG]: Command properties is extracted successfully.
-[2676] 10/12/17 - 04:01AM[DEBUG]: Command is parsed successfully.
-[2676] 10/12/17 - 04:01AM[DEBUG]: The command is starting execution...
-[2680] 10/12/17 - 04:01AM[DEBUG]: Interactive mode is activated.
-[2680] 10/12/17 - 04:01AM[DEBUG]: Command properties is extracted successfully.
-[2680] 10/12/17 - 04:01AM[DEBUG]: Command is parsed successfully.
-[2680] 10/12/17 - 04:01AM[DEBUG]: The command is starting execution...
-[2681] 10/12/17 - 04:01AM[DEBUG]: Child process is launched.
-[2680] 10/12/17 - 04:01AM[DEBUG]: Child process is terminated successfully.
-[2680] 10/12/17 - 04:01AM[DEBUG]: Command is saved to the history file.
-[2680] 10/12/17 - 04:01AM[DEBUG]: Command properties is extracted successfully.
-[2680] 10/12/17 - 04:01AM[DEBUG]: Command is parsed successfully.
-[2680] 10/12/17 - 04:01AM[DEBUG]: The command is starting execution...
-[2738] 10/12/17 - 04:02AM[DEBUG]: Interactive mode is activated.
-[2738] 10/12/17 - 04:02AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:02AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:02AM[DEBUG]: The command is starting execution...
-[2738] 10/12/17 - 04:02AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:02AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:02AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:02AM[DEBUG]: The command is starting execution...
-[2751] 10/12/17 - 04:02AM[DEBUG]: Child process is launched.
-[2738] 10/12/17 - 04:02AM[DEBUG]: Child process is terminated successfully.
-[2738] 10/12/17 - 04:02AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: The command is starting execution...
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: The command is starting execution...
-[2753] 10/12/17 - 04:03AM[DEBUG]: Child process is launched.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Child process is terminated successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: The command is starting execution...
-[2760] 10/12/17 - 04:03AM[DEBUG]: Child process is launched.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Child process is terminated successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: The command is starting execution...
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: The command is starting execution...
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: The command is starting execution...
-[2763] 10/12/17 - 04:03AM[DEBUG]: Child process is launched.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Child process is terminated successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is saved to the history file.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command properties is extracted successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is parsed successfully.
-[2738] 10/12/17 - 04:03AM[DEBUG]: The command is starting execution...
-[2738] 10/12/17 - 04:03AM[DEBUG]: Command is saved to the history file.
-[2808] 10/12/17 - 04:05AM[DEBUG]: Interactive mode is activated.
-[2834] 10/12/17 - 04:05AM[DEBUG]: Interactive mode is activated.
-[2834] 10/12/17 - 04:06AM[DEBUG]: Command properties is extracted successfully.
-[2834] 10/12/17 - 04:06AM[DEBUG]: Command is parsed successfully.
-[2834] 10/12/17 - 04:06AM[DEBUG]: The command is starting execution...
-[2834] 10/12/17 - 04:06AM[DEBUG]: Command is saved to the history file.
-[2895] 10/12/17 - 04:07AM[DEBUG]: Interactive mode is activated.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command properties is extracted successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is parsed successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: The command is starting execution...
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is saved to the history file.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command properties is extracted successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is parsed successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: The command is starting execution...
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is saved to the history file.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command properties is extracted successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is parsed successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: The command is starting execution...
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is saved to the history file.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command properties is extracted successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is parsed successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: The command is starting execution...
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is saved to the history file.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command properties is extracted successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is parsed successfully.
-[2895] 10/12/17 - 04:08AM[DEBUG]: The command is starting execution...
-[2895] 10/12/17 - 04:08AM[DEBUG]: Command is saved to the history file.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Interactive mode is activated.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command properties is extracted successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is parsed successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: The command is starting execution...
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is saved to the history file.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command properties is extracted successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is parsed successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: The command is starting execution...
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is saved to the history file.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command properties is extracted successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is parsed successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: The command is starting execution...
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is saved to the history file.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command properties is extracted successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is parsed successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: The command is starting execution...
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is saved to the history file.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command properties is extracted successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is parsed successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: The command is starting execution...
-[2954] 10/12/17 - 04:10AM[DEBUG]: Child process is launched.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Child process is terminated successfully.
-[2947] 10/12/17 - 04:10AM[DEBUG]: Command is saved to the history file.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Interactive mode is activated.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command properties is extracted successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is parsed successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: The command is starting execution...
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is saved to the history file.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command properties is extracted successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is parsed successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: The command is starting execution...
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is saved to the history file.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command properties is extracted successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is parsed successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: The command is starting execution...
-[3006] 10/12/17 - 04:11AM[DEBUG]: Child process is launched.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Child process is terminated successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is saved to the history file.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command properties is extracted successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is parsed successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: The command is starting execution...
-[3008] 10/12/17 - 04:11AM[DEBUG]: Child process is launched.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Child process is terminated successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is saved to the history file.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command properties is extracted successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: Command is parsed successfully.
-[3005] 10/12/17 - 04:11AM[DEBUG]: The command is starting execution...
-[3047] 10/12/17 - 04:12AM[DEBUG]: Interactive mode is activated.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command properties is extracted successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is parsed successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: The command is starting execution...
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is saved to the history file.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command properties is extracted successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is parsed successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: The command is starting execution...
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is saved to the history file.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command properties is extracted successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is parsed successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: The command is starting execution...
-[3049] 10/12/17 - 04:12AM[DEBUG]: Child process is launched.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Child process is terminated successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is saved to the history file.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command properties is extracted successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is parsed successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: The command is starting execution...
-[3050] 10/12/17 - 04:12AM[DEBUG]: Child process is launched.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Child process is terminated successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is saved to the history file.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command properties is extracted successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: Command is parsed successfully.
-[3047] 10/12/17 - 04:12AM[DEBUG]: The command is starting execution...
-[3079] 10/12/17 - 04:12AM[DEBUG]: Interactive mode is activated.
-[3116] 10/12/17 - 04:13AM[DEBUG]: Interactive mode is activated.
-[3116] 10/12/17 - 04:13AM[DEBUG]: Command properties is extracted successfully.
-[3116] 10/12/17 - 04:13AM[DEBUG]: Command is parsed successfully.
-[3116] 10/12/17 - 04:13AM[DEBUG]: The command is starting execution...
-[3116] 10/12/17 - 04:13AM[DEBUG]: Command is saved to the history file.
-[3116] 10/12/17 - 04:13AM[DEBUG]: Command properties is extracted successfully.
-[3116] 10/12/17 - 04:13AM[DEBUG]: Command is parsed successfully.
-[3116] 10/12/17 - 04:13AM[DEBUG]: The command is starting execution...
-[3116] 10/12/17 - 04:13AM[DEBUG]: Command is saved to the history file.
-[3116] 10/12/17 - 04:14AM[DEBUG]: Command properties is extracted successfully.
-[3116] 10/12/17 - 04:14AM[DEBUG]: Command is parsed successfully.
-[3116] 10/12/17 - 04:14AM[DEBUG]: The command is starting execution...
-[3187] 10/12/17 - 04:15AM[DEBUG]: Child process is launched.
-[3116] 10/12/17 - 04:15AM[DEBUG]: Child process is terminated successfully.
-[3116] 10/12/17 - 04:15AM[DEBUG]: Command is saved to the history file.
-[3116] 10/12/17 - 04:15AM[DEBUG]: Command properties is extracted successfully.
-[3116] 10/12/17 - 04:15AM[DEBUG]: Command is parsed successfully.
-[3116] 10/12/17 - 04:15AM[DEBUG]: The command is starting execution...
-[3258] 10/12/17 - 04:15AM[DEBUG]: Interactive mode is activated.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3279] 10/12/17 - 04:16AM[DEBUG]: Child process is launched.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Child process is terminated successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3280] 10/12/17 - 04:16AM[DEBUG]: Child process is launched.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Child process is terminated successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command properties is extracted successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is parsed successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: The command is starting execution...
-[3281] 10/12/17 - 04:16AM[DEBUG]: Child process is launched.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Child process is terminated successfully.
-[3258] 10/12/17 - 04:16AM[DEBUG]: Command is saved to the history file.
+[3875] 10/12/17 - 04:47AM[DEBUG]: Interactive mode is activated.
+[3898] 10/12/17 - 04:48AM[DEBUG]: Interactive mode is activated.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Interactive mode is activated.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command properties is extracted successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is parsed successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: The command is starting execution...
+[3927] 10/12/17 - 04:48AM[DEBUG]: Child process is launched.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Child process is terminated successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is saved to the history file.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command properties is extracted successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is parsed successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: The command is starting execution...
+[3928] 10/12/17 - 04:48AM[DEBUG]: Child process is launched.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Child process is terminated successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is saved to the history file.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command properties is extracted successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is parsed successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: The command is starting execution...
+[3929] 10/12/17 - 04:48AM[DEBUG]: Child process is launched.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Child process is terminated successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is saved to the history file.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command properties is extracted successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is parsed successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: The command is starting execution...
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is saved to the history file.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command properties is extracted successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: Command is parsed successfully.
+[3925] 10/12/17 - 04:48AM[DEBUG]: The command is starting execution...
+[5849] 10/12/17 - 06:23AM[DEBUG]: Interactive mode is activated.
+[5849] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5849] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5849] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5849] 10/12/17 - 06:23AM[DEBUG]: Command is saved to the history file.
+[5849] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5849] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5849] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5851] 10/12/17 - 06:23AM[DEBUG]: Child process is launched.
+[5849] 10/12/17 - 06:23AM[DEBUG]: Child process is terminated successfully.
+[5849] 10/12/17 - 06:23AM[DEBUG]: Command is saved to the history file.
+[5860] 10/12/17 - 06:23AM[DEBUG]: Interactive mode is activated.
+[5860] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5860] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5860] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5860] 10/12/17 - 06:23AM[DEBUG]: Command is saved to the history file.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Interactive mode is activated.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5885] 10/12/17 - 06:23AM[DEBUG]: Child process is launched.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Child process is terminated successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command is saved to the history file.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5886] 10/12/17 - 06:23AM[DEBUG]: Child process is launched.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Child process is terminated successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command is saved to the history file.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5887] 10/12/17 - 06:23AM[DEBUG]: Child process is launched.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Child process is terminated successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command is saved to the history file.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5883] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5897] 10/12/17 - 06:23AM[DEBUG]: Interactive mode is activated.
+[5897] 10/12/17 - 06:23AM[DEBUG]: Command properties is extracted successfully.
+[5897] 10/12/17 - 06:23AM[DEBUG]: Command is parsed successfully.
+[5897] 10/12/17 - 06:23AM[DEBUG]: The command is starting execution...
+[5897] 10/12/17 - 06:23AM[DEBUG]: Command is saved to the history file.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Interactive mode is activated.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command properties is extracted successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is parsed successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: The command is starting execution...
+[5972] 10/12/17 - 06:25AM[DEBUG]: Child process is launched.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Child process is terminated successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is saved to the history file.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command properties is extracted successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is parsed successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: The command is starting execution...
+[5973] 10/12/17 - 06:25AM[DEBUG]: Child process is launched.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Child process is terminated successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is saved to the history file.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command properties is extracted successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is parsed successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: The command is starting execution...
+[5974] 10/12/17 - 06:25AM[DEBUG]: Child process is launched.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Child process is terminated successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is saved to the history file.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command properties is extracted successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is parsed successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: The command is starting execution...
+[5975] 10/12/17 - 06:25AM[DEBUG]: Child process is launched.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Child process is terminated successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is saved to the history file.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command properties is extracted successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: Command is parsed successfully.
+[5970] 10/12/17 - 06:25AM[DEBUG]: The command is starting execution...
+[6042] 10/12/17 - 06:26AM[DEBUG]: Interactive mode is activated.
+[6042] 10/12/17 - 06:26AM[DEBUG]: Command properties is extracted successfully.
+[6042] 10/12/17 - 06:26AM[DEBUG]: Command is parsed successfully.
+[6042] 10/12/17 - 06:26AM[DEBUG]: The command is starting execution...
+[6042] 10/12/17 - 06:26AM[DEBUG]: Command is saved to the history file.
+[6076] 10/12/17 - 06:26AM[DEBUG]: Interactive mode is activated.
+[6148] 10/12/17 - 06:27AM[DEBUG]: Interactive mode is activated.
+[6148] 10/12/17 - 06:27AM[DEBUG]: Command properties is extracted successfully.
+[6148] 10/12/17 - 06:27AM[DEBUG]: Command is parsed successfully.
+[6148] 10/12/17 - 06:27AM[DEBUG]: The command is starting execution...
+[6148] 10/12/17 - 06:27AM[DEBUG]: Command is saved to the history file.

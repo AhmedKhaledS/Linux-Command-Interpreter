@@ -38,7 +38,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/ahmed/Linux-Command-Interpreter/Shell
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ahmed/Linux-Command-Interpreter/Shell
+CMAKE_BINARY_DIR = /home/ahmed/Linux-Command-Interpreter/Shell/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Shell.dir/depend.make
@@ -50,8 +50,8 @@ include CMakeFiles/Shell.dir/progress.make
 include CMakeFiles/Shell.dir/flags.make
 
 CMakeFiles/Shell.dir/main.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/main.c.o: main.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/Shell.dir/main.c.o: ../main.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/main.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/main.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/main.c
 
@@ -73,8 +73,8 @@ CMakeFiles/Shell.dir/main.c.o.provides: CMakeFiles/Shell.dir/main.c.o.requires
 CMakeFiles/Shell.dir/main.c.o.provides.build: CMakeFiles/Shell.dir/main.c.o
 
 CMakeFiles/Shell.dir/ShellController.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/ShellController.c.o: ShellController.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_2)
+CMakeFiles/Shell.dir/ShellController.c.o: ../ShellController.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/ShellController.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/ShellController.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/ShellController.c
 
@@ -96,8 +96,8 @@ CMakeFiles/Shell.dir/ShellController.c.o.provides: CMakeFiles/Shell.dir/ShellCon
 CMakeFiles/Shell.dir/ShellController.c.o.provides.build: CMakeFiles/Shell.dir/ShellController.c.o
 
 CMakeFiles/Shell.dir/command_parser.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/command_parser.c.o: command_parser.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_3)
+CMakeFiles/Shell.dir/command_parser.c.o: ../command_parser.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/command_parser.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/command_parser.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/command_parser.c
 
@@ -119,8 +119,8 @@ CMakeFiles/Shell.dir/command_parser.c.o.provides: CMakeFiles/Shell.dir/command_p
 CMakeFiles/Shell.dir/command_parser.c.o.provides.build: CMakeFiles/Shell.dir/command_parser.c.o
 
 CMakeFiles/Shell.dir/command_utils.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/command_utils.c.o: command_utils.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_4)
+CMakeFiles/Shell.dir/command_utils.c.o: ../command_utils.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/command_utils.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/command_utils.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/command_utils.c
 
@@ -142,8 +142,8 @@ CMakeFiles/Shell.dir/command_utils.c.o.provides: CMakeFiles/Shell.dir/command_ut
 CMakeFiles/Shell.dir/command_utils.c.o.provides.build: CMakeFiles/Shell.dir/command_utils.c.o
 
 CMakeFiles/Shell.dir/commands.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/commands.c.o: commands.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_5)
+CMakeFiles/Shell.dir/commands.c.o: ../commands.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/commands.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/commands.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/commands.c
 
@@ -165,8 +165,8 @@ CMakeFiles/Shell.dir/commands.c.o.provides: CMakeFiles/Shell.dir/commands.c.o.re
 CMakeFiles/Shell.dir/commands.c.o.provides.build: CMakeFiles/Shell.dir/commands.c.o
 
 CMakeFiles/Shell.dir/environment.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/environment.c.o: environment.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_6)
+CMakeFiles/Shell.dir/environment.c.o: ../environment.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/environment.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/environment.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/environment.c
 
@@ -188,8 +188,8 @@ CMakeFiles/Shell.dir/environment.c.o.provides: CMakeFiles/Shell.dir/environment.
 CMakeFiles/Shell.dir/environment.c.o.provides.build: CMakeFiles/Shell.dir/environment.c.o
 
 CMakeFiles/Shell.dir/file_service.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/file_service.c.o: file_service.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_7)
+CMakeFiles/Shell.dir/file_service.c.o: ../file_service.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/file_service.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/file_service.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/file_service.c
 
@@ -211,8 +211,8 @@ CMakeFiles/Shell.dir/file_service.c.o.provides: CMakeFiles/Shell.dir/file_servic
 CMakeFiles/Shell.dir/file_service.c.o.provides.build: CMakeFiles/Shell.dir/file_service.c.o
 
 CMakeFiles/Shell.dir/logger.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/logger.c.o: logger.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_8)
+CMakeFiles/Shell.dir/logger.c.o: ../logger.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/logger.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/logger.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/logger.c
 
@@ -234,8 +234,8 @@ CMakeFiles/Shell.dir/logger.c.o.provides: CMakeFiles/Shell.dir/logger.c.o.requir
 CMakeFiles/Shell.dir/logger.c.o.provides.build: CMakeFiles/Shell.dir/logger.c.o
 
 CMakeFiles/Shell.dir/tokenizer.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/tokenizer.c.o: tokenizer.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_9)
+CMakeFiles/Shell.dir/tokenizer.c.o: ../tokenizer.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/tokenizer.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/tokenizer.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/tokenizer.c
 
@@ -257,8 +257,8 @@ CMakeFiles/Shell.dir/tokenizer.c.o.provides: CMakeFiles/Shell.dir/tokenizer.c.o.
 CMakeFiles/Shell.dir/tokenizer.c.o.provides.build: CMakeFiles/Shell.dir/tokenizer.c.o
 
 CMakeFiles/Shell.dir/variables.c.o: CMakeFiles/Shell.dir/flags.make
-CMakeFiles/Shell.dir/variables.c.o: variables.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles $(CMAKE_PROGRESS_10)
+CMakeFiles/Shell.dir/variables.c.o: ../variables.c
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/Shell.dir/variables.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/Shell.dir/variables.c.o   -c /home/ahmed/Linux-Command-Interpreter/Shell/variables.c
 
@@ -331,6 +331,6 @@ CMakeFiles/Shell.dir/clean:
 .PHONY : CMakeFiles/Shell.dir/clean
 
 CMakeFiles/Shell.dir/depend:
-	cd /home/ahmed/Linux-Command-Interpreter/Shell && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmed/Linux-Command-Interpreter/Shell /home/ahmed/Linux-Command-Interpreter/Shell /home/ahmed/Linux-Command-Interpreter/Shell /home/ahmed/Linux-Command-Interpreter/Shell /home/ahmed/Linux-Command-Interpreter/Shell/CMakeFiles/Shell.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ahmed/Linux-Command-Interpreter/Shell/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ahmed/Linux-Command-Interpreter/Shell /home/ahmed/Linux-Command-Interpreter/Shell /home/ahmed/Linux-Command-Interpreter/Shell/build /home/ahmed/Linux-Command-Interpreter/Shell/build /home/ahmed/Linux-Command-Interpreter/Shell/build/CMakeFiles/Shell.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Shell.dir/depend
 

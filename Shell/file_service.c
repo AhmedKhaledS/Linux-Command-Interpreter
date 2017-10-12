@@ -20,8 +20,8 @@ void load_history()
 {
     FILE* file;
     char tmp[MAX_LEN];
-    strcat(tmp, shell_directory);
-    file = fopen(strcat(tmp,"/history.txt"), "r+");
+    strcpy(tmp, shell_directory);
+    file = fopen(strcat(tmp,"/history.txt"), "r");
     if (file == NULL)
         return;
     char buffer[MAX_COMMANDS][MAX_LEN];

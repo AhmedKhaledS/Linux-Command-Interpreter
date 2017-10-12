@@ -1,0 +1,109 @@
+ls
+ls -al
+ls -a -l
+/bin/ls -l -a
+        /bin/ls     -l 
+vim
+gedit &
+ps
+bin/ps
+pwd
+mkdir cs333
+touch cs333/lab1.txt
+cd ~/cs333
+vi lab1.txt
+pwd
+cd ../
+cd ~
+wc cs333/lab1.txt
+cat cs333/lab1.txt
+#this is a comment
+x=5
+echo $x
+echo "hello world"
+echo              	"hello           world"
+history
+ls -al
+clear
+pwd
+who
+ls
+ls -l
+x=Linux-Command-Interpreter
+echo $x
+cd $x
+y=Shell
+cd $y
+cd ..
+cd ..
+history
+ls
+ls -al
+ls -a -l
+/bin/ls -l -a
+        /bin/ls     -l 
+vim
+gedit &
+ps
+bin/ps
+pwd
+mkdir cs333
+touch cs333/lab1.txt
+cd ~/cs333
+vi lab1.txt
+pwd
+cd ../
+cd ~
+wc cs333/lab1.txt
+cat cs333/lab1.txt
+#this is a comment
+x=5
+echo $x
+echo "hello world"
+echo              	"hello           world"
+history
+HOME=2
+echo ~
+cd ~
+cd ~/Linux_Command-Interpreter
+cd ./Linux-Command-Interpreter
+ps
+ps -l
+who
+history
+pwd
+ls 
+dir
+mkdir folder1
+cd folder1
+touch x.txt
+ls
+cp x.txt x.txt
+mkdir folder2
+cp x.txt ./folder2
+ls -r
+cp x.txt y.txt
+ls
+mkdir folder1
+cd folder1
+mkdir folder2
+touch file.txt
+ls
+cp file.txt folder2/file.txt
+cd folder2
+ls
+pwd
+rm file.txt
+ls
+cd ..
+rmdir folder2
+ls
+rm file.txt
+ls
+cd ..
+rmdir folder1
+ls
+who
+pwd
+ps -l
+history

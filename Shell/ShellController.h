@@ -20,7 +20,6 @@
 
 char* unparsedCommand;
 char current_directory[MAX_PATH_LEN];
-char shell_directory[MAX_PATH_LEN];
 char** parsedCommand;
 char* commandName;
 char** argList;
